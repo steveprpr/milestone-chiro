@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Milestone Chiropractic Centre | Fredericksburg, VA</title>
+  <meta name="description" content="Contact Milestone Chiropractic Centre in Fredericksburg, VA. Call (540) 656-2885, request an appointment online, or get directions to 10708 Ballantraye Drive, Suite 206.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://milestonechiropractic.com/contact.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="Milestone Chiropractic Centre - Home">
+        <img src="images/logo.png" alt="Milestone Chiropractic Centre" style="height:52px;width:auto;">
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li><a href="new-patient.html" class="nav__link">New Patients</a></li>
+          <li><a href="blog.html" class="nav__link">Blog</a></li>
+          <li><a href="contact.html" class="nav__link nav__link--active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="tel:+15406562885" class="header__phone">(540) 656-2885</a>
+        <a href="new-patient.html" class="btn btn--coral btn--sm">Book Appointment</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-label" style="color:rgba(255,255,255,0.75);">We Are Here For You</span>
+        <h1>Contact &amp; Location</h1>
+        <p>Serving Fredericksburg, Spotsylvania, and Stafford since 2009. Same-week appointments usually available.</p>
+      </div>
+    </section>
+
+    <!-- Quick Contact Cards -->
+    <section class="section" style="padding-bottom:0;">
+      <div class="container">
+        <div class="contact-info-grid">
+
+          <div class="contact-card">
+            <div class="contact-card__icon">📞</div>
+            <h3>Call Us</h3>
+            <a href="tel:+15406562885" class="contact-card__main">(540) 656-2885</a>
+            <p>Mon&ndash;Thu during office hours.<br>Leave a voicemail anytime.</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card__icon">📍</div>
+            <h3>Our Location</h3>
+            <p class="contact-card__main">10708 Ballantraye Drive<br>Suite 206<br>Fredericksburg, VA 22407</p>
+            <a href="https://maps.google.com/?q=10708+Ballantraye+Drive+Suite+206+Fredericksburg+VA+22407" target="_blank" rel="noopener" style="font-size:0.875rem;color:var(--blue-primary);">Get Directions &rarr;</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card__icon">🕐</div>
+            <h3>Office Hours</h3>
+            <table class="hours-table">
+              <tr><td>Mon, Tue, Thu</td><td>9:00am &ndash; 1:00pm</td></tr>
+              <tr><td></td><td>2:30pm &ndash; 6:00pm</td></tr>
+              <tr><td>Wednesday</td><td>8:00am &ndash; 1:00pm</td></tr>
+              <tr><td></td><td>1:30pm &ndash; 4:00pm</td></tr>
+              <tr><td>Friday &ndash; Sunday</td><td style="color:var(--text-light);">Closed</td></tr>
+            </table>
+            <p style="font-size:0.8rem;margin-top:0.75rem;color:var(--text-light);">Dr. Meggen available by appointment.</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card__icon">📅</div>
+            <h3>Book Online</h3>
+            <p>Request an appointment anytime. We will confirm within one business day.</p>
+            <a href="new-patient.html" class="btn btn--coral btn--sm" style="margin-top:0.75rem;display:inline-flex;">Request Appointment</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form + Map -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <span class="section-label">Send a Message</span>
+            <h2 class="section-title">How Can We Help You?</h2>
+            <p style="color:var(--text-mid);margin-bottom:2rem;">Fill out the form below and a member of our team will get back to you within one business day.</p>
+
+            <form name="contact" method="POST" data-netlify="true" class="contact-form" id="contactForm">
+              <input type="hidden" name="form-name" value="contact">
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name <span style="color:var(--cta-coral);">*</span></label>
+                  <input type="text" id="firstName" name="firstName" placeholder="Jane" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name <span style="color:var(--cta-coral);">*</span></label>
+                  <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone Number <span style="color:var(--cta-coral);">*</span></label>
+                  <input type="tel" id="phone" name="phone" placeholder="(540) 555-0000" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="jane@example.com">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="reason">Reason for Visit</label>
+                <select id="reason" name="reason">
+                  <option value="">Select one&hellip;</option>
+                  <option>Back Pain or Sciatica</option>
+                  <option>Neck Pain or Headaches</option>
+                  <option>Sports Injury</option>
+                  <option>Auto Accident / Whiplash</option>
+                  <option>Pregnancy Chiropractic</option>
+                  <option>Pediatric Chiropractic</option>
+                  <option>General Wellness / Maintenance</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="preferredTime">Preferred Appointment Time</label>
+                <select id="preferredTime" name="preferredTime">
+                  <option value="">No preference</option>
+                  <option>Morning (before noon)</option>
+                  <option>Afternoon (noon &ndash; 3pm)</option>
+                  <option>Late Afternoon (3pm &ndash; 6pm)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message or Questions</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us a little about what you are experiencing or any questions you have&hellip;"></textarea>
+              </div>
+
+              <div class="form-group" style="display:flex;align-items:flex-start;gap:0.75rem;">
+                <input type="checkbox" id="newPatient" name="newPatient" value="yes" style="width:auto;margin-top:4px;flex-shrink:0;">
+                <label for="newPatient" style="font-weight:400;font-size:0.9rem;cursor:pointer;">I am a new patient and would like to take advantage of the <strong>$95 New Patient Exam</strong> offer.</label>
+              </div>
+
+              <button type="submit" class="btn btn--coral btn--lg" style="width:100%;justify-content:center;margin-top:0.5rem;">
+                Send Message &rarr;
+              </button>
+
+              <div class="form-success" id="formSuccess">
+                <strong>Message received!</strong> A member of our team will follow up within one business day. If you need immediate assistance, please call <a href="tel:+15406562885">(540) 656-2885</a>.
+              </div>
+            </form>
+          </div>
+
+          <!-- Map -->
+          <div class="contact-map-wrap">
+            <span class="section-label">Find Us</span>
+            <h2 class="section-title">Our Office</h2>
+            <p style="color:var(--text-mid);margin-bottom:1.5rem;">Located in Fredericksburg off Plank Road. Free parking available in the building lot.</p>
+
+            <div style="border-radius:12px;overflow:hidden;box-shadow:var(--shadow-md);border:1px solid var(--border-color,#e2e8f0);margin-bottom:1.5rem;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3131.5!2d-77.5199!3d38.2613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b6c6b1e7777777%3A0x1!2sMilestone+Chiropractic+Centre!5e0!3m2!1sen!2sus!4v1"
+                width="100%"
+                height="340"
+                style="border:0;display:block;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Milestone Chiropractic Centre on Google Maps">
+              </iframe>
+            </div>
+
+            <div style="background:var(--warm-neutral,#F2EBE1);border-radius:12px;padding:1.5rem;">
+              <h4 style="margin-bottom:0.75rem;font-size:1rem;">Driving Directions</h4>
+              <p style="font-size:0.9rem;color:var(--text-mid);line-height:1.7;">
+                <strong>From I-95:</strong> Take Exit 130B (Route 3 West / Plank Road). Continue west approximately 5 miles. Turn left onto Ballantraye Drive. Our office is in the building on the right, Suite 206.
+              </p>
+              <a href="https://maps.google.com/?q=10708+Ballantraye+Drive+Suite+206+Fredericksburg+VA+22407"
+                target="_blank" rel="noopener"
+                class="btn btn--outline btn--sm" style="margin-top:1rem;display:inline-flex;">
+                Open in Google Maps &rarr;
+              </a>
+            </div>
+
+            <div style="background:var(--blue-primary);border-radius:12px;padding:1.5rem;margin-top:1.5rem;color:#fff;">
+              <h4 style="color:#fff;margin-bottom:0.5rem;">Serving the Greater Fredericksburg Area</h4>
+              <p style="color:rgba(255,255,255,0.85);font-size:0.875rem;">Fredericksburg &bull; Spotsylvania &bull; Stafford &bull; Hartwood &bull; Chancellor &bull; Locust Grove</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Insurance -->
+    <section class="section section--warm">
+      <div class="container" style="text-align:center;">
+        <span class="section-label">Coverage</span>
+        <h2 class="section-title">Insurance We Accept</h2>
+        <p class="section-subtitle" style="margin:0 auto 2.5rem;">We work with most major insurance plans. Call our office to verify your specific coverage before your visit.</p>
+        <div class="insurance-logos">
+          <span class="insurance-badge">Blue Cross Blue Shield</span>
+          <span class="insurance-badge">Aetna</span>
+          <span class="insurance-badge">Cigna</span>
+          <span class="insurance-badge">United Healthcare</span>
+          <span class="insurance-badge">Medicare</span>
+          <span class="insurance-badge">Anthem</span>
+          <span class="insurance-badge">Humana</span>
+          <span class="insurance-badge">Tricare</span>
+          <span class="insurance-badge">Auto / PIP</span>
+          <span class="insurance-badge">Personal Injury</span>
+          <span class="insurance-badge">Self-Pay Welcome</span>
+        </div>
+        <p style="margin-top:1.75rem;font-size:0.875rem;color:var(--text-light);">Don&rsquo;t see your plan? Call us at <a href="tel:+15406562885">(540) 656-2885</a> &mdash; we accept many additional plans not listed here.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">Milestone Chiropractic Centre</p>
+          <p class="footer__desc">Trusted chiropractic care for the Fredericksburg community since 2009.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="X"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="new-patient.html">New Patients</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer__links">
+            <li><a href="back-pain.html">Back Pain &amp; Sciatica</a></li>
+            <li><a href="services.html">Neck Pain &amp; Headaches</a></li>
+            <li><a href="services.html">Sports Injuries</a></li>
+            <li><a href="pregnancy.html">Pregnancy Chiropractic</a></li>
+            <li><a href="pregnancy.html">Pediatric Care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer__links">
+            <li><a href="tel:+15406562885">(540) 656-2885</a></li>
+            <li>10708 Ballantraye Dr, Suite 206<br>Fredericksburg, VA 22407</li>
+            <li style="margin-top:12px;"><strong style="color:#fff;">Hours:</strong></li>
+            <li>Mon, Tue, Thu: 9a&ndash;1p, 2:30&ndash;6p</li>
+            <li>Wed: 8a&ndash;1p, 1:30&ndash;4p</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        &copy; 2026 Milestone Chiropractic Centre. All rights reserved. | <a href="contact.html" style="color:#9ca3af;">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
