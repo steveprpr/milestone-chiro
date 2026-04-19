@@ -4,14 +4,22 @@
 
 /* --- CSS Custom Properties --- */
 :root {
-  --bg-primary: #F8F9FA;
-  --blue-primary: #3A7CA5;
-  --green-accent: #5B9279;
-  --warm-neutral: #E8DED1;
-  --text-dark: #2D3142;
-  --cta-coral: #E07A5F;
-  --cta-coral-hover: #c9674e;
+  /* Brand palette — derived from official Milestone Chiropractic logo */
+  --sage: #7BAD97;               /* primary brand green — logo enso color */
+  --sage-dark: #4D8A73;          /* deeper sage — hover states, accents */
+  --sage-light: #EEF5F1;         /* very light sage — section tints */
+  --charcoal: #2D2D2D;           /* logo typography charcoal */
+  --warm-neutral: #EDE9E3;       /* warm cream — alternating sections */
+  --bg-primary: #F7F5F2;         /* warm off-white page background */
+  --cta-coral: #C8694F;          /* terracotta CTA — complements sage */
+  --cta-coral-hover: #B05940;
   --white: #FFFFFF;
+
+  /* Legacy aliases — keep so existing inline HTML styles still resolve */
+  --blue-primary: var(--sage);
+  --green-accent: var(--sage-dark);
+  --text-dark: var(--charcoal);
+
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.10);
@@ -220,19 +228,21 @@ ul, ol { list-style: none; }
 }
 
 .header__logo {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: var(--blue-primary);
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 8px;
   flex-shrink: 0;
+  line-height: 1;
 }
 
 .header__logo:hover {
-  color: var(--blue-primary);
+  opacity: 0.88;
+}
+
+.header__logo-img {
+  height: 54px;
+  width: auto;
+  display: block;
 }
 
 .header__logo svg {
@@ -335,7 +345,7 @@ ul, ol { list-style: none; }
 .hero {
   position: relative;
   padding: 100px 0 80px;
-  background: linear-gradient(135deg, rgba(58, 124, 165, 0.08) 0%, rgba(91, 146, 121, 0.06) 100%);
+  background: linear-gradient(150deg, var(--sage-light) 0%, var(--warm-neutral) 60%, var(--bg-primary) 100%);
   overflow: hidden;
   min-height: 520px;
   display: flex;
@@ -363,7 +373,7 @@ ul, ol { list-style: none; }
 
 .hero__badge {
   display: inline-block;
-  background: rgba(58, 124, 165, 0.12);
+  background: rgba(123, 173, 151, 0.12);
   color: var(--blue-primary);
   padding: 6px 16px;
   border-radius: 20px;
@@ -435,7 +445,7 @@ ul, ol { list-style: none; }
 .card__icon {
   width: 56px;
   height: 56px;
-  background: rgba(58, 124, 165, 0.1);
+  background: rgba(123, 173, 151, 0.10);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -748,7 +758,7 @@ ul, ol { list-style: none; }
 .form-group select:focus {
   border-color: var(--blue-primary);
   outline: none;
-  box-shadow: 0 0 0 3px rgba(58, 124, 165, 0.15);
+  box-shadow: 0 0 0 3px rgba(123, 173, 151, 0.15);
 }
 
 .form-group textarea {
@@ -828,9 +838,14 @@ ul, ol { list-style: none; }
 
 /* --- Page Hero (interior pages) --- */
 .page-hero {
-  background: linear-gradient(135deg, rgba(58, 124, 165, 0.08) 0%, rgba(91, 146, 121, 0.06) 100%);
-  padding: 48px 0;
+  background: linear-gradient(135deg, var(--charcoal) 0%, #3a3d3c 100%);
+  padding: 56px 0;
   text-align: center;
+}
+
+.page-hero h1,
+.page-hero p {
+  color: var(--white);
 }
 
 .page-hero h1 {
@@ -1394,4 +1409,55 @@ a.contact-card__main:hover { color: var(--blue-primary); }
   .trust-bar__item {
     padding: 8px 0;
   }
+}
+
+/* ============================================================
+   Logo Placement
+   ============================================================ */
+
+/* Header logo image */
+.header__logo-img {
+  height: 54px;
+  width: auto;
+  display: block;
+}
+
+/* Footer logo — sits on a white card so the color logo reads on dark bg */
+.footer__logo-wrap {
+  display: inline-block;
+  background: var(--white);
+  border-radius: 10px;
+  padding: 10px 18px;
+  margin-bottom: 16px;
+}
+
+.footer__logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+/* Page-hero section label on dark background */
+.page-hero .section-label {
+  color: rgba(255, 255, 255, 0.70);
+}
+
+/* Breadcrumb on dark page-hero */
+.page-hero .breadcrumb,
+.page-hero .breadcrumb a {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* Hero badge updated for sage palette */
+.hero__badge {
+  background: rgba(123, 173, 151, 0.14);
+  color: var(--sage-dark);
+}
+
+/* Section subtitle */
+.section-subtitle {
+  font-size: 1.05rem;
+  color: #6b7280;
+  max-width: 640px;
+  margin: 0.5rem auto 0;
 }
