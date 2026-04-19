@@ -3,6 +3,7 @@
 Modern website for [milestonechiro.com](https://milestonechiro.com) — built as a Netlify demo for client review and feedback.
 
 **GitHub:** https://github.com/steveprpr/milestone-chiro
+**Live Demo:** https://milestonechiro.netlify.app
 
 ---
 
